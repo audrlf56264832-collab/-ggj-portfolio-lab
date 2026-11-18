@@ -6,11 +6,11 @@
 
 ## 설치
 
-1. [GitHub Releases](https://github.com/audrlf56264832-collab/-ggj-portfolio-lab/releases)에서 `GGJPortfolioLab-Setup.exe`를 받습니다.
+1. [Windows 설치 파일 다운로드](https://github.com/audrlf56264832-collab/-ggj-portfolio-lab/releases/latest/download/GGJPortfolioLab-Setup.exe)를 누릅니다. [버전별 변경 사항](https://github.com/audrlf56264832-collab/-ggj-portfolio-lab/releases)도 확인할 수 있습니다.
 2. 설치 파일을 더블클릭해 사용자별 설치를 진행합니다. Python 설치나 GitHub 로그인이 필요하지 않습니다.
 3. 바탕화면 또는 시작 메뉴의 **GGJ Portfolio Lab**을 실행합니다.
 
-릴리스에는 설치 파일과 `GGJPortfolioLab-Setup.exe.sha256` 체크섬을 함께 제공합니다. 아직 릴리스가 없다면 설치 파일이 준비될 때까지 기다려 주세요.
+Windows x64용입니다. 릴리스에는 설치 파일과 `GGJPortfolioLab-Setup.exe.sha256` 체크섬을 함께 제공합니다. 현재 설치 파일은 코드 서명이 없어 Windows SmartScreen 경고가 나타날 수 있습니다.
 
 ## 업데이트와 데이터
 
