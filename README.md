@@ -20,6 +20,24 @@ Windows x64용입니다. 릴리스에는 설치 파일과 `GGJPortfolioLab-Setup
 
 과거 성과는 미래 수익을 보장하지 않습니다. 실제 주문 기능은 없습니다.
 
+## v0.7.0 시장 회복 모니터링 v1.0
+
+새 **시장 회복 모니터링** 메뉴에서 신용시장 30점, SPY 저점 유지 25점, 시장 상승 종목 확산 20점, 반도체 상대강도 15점, VIX 10점과 한국어 판단 근거를 확인합니다. 실제 관측일·출처·평가 가능/미평가 점수를 구분하며, 급격한 신용 악화는 총점과 별도로 표시합니다. 이 기준은 통계적으로 검증된 예측 모델이 아닌 초기 사용자 규칙입니다.
+
+실행 시와 실행 중 매시간 백그라운드에서 조회하며 **새로고침**도 사용할 수 있습니다. 첫 조회는 전체 구성 종목을 요청하므로 수십 초에서 수 분이 걸릴 수 있습니다. 현재 게시 S&P 500 명단의 실제 종목 자료가 일부라도 부족하면 확산 점수를 미평가합니다. 누락을 임의 값이나 다른 종목으로 대신하지 않습니다. 전일 점수는 현재 자료·규칙으로 회고 재계산한 참고치입니다.
+
+**설정 → 회복 모니터 설정**에서 본인 [FRED API 키](https://fred.stlouisfed.org/docs/api/api_key.html)를 입력할 수 있습니다. 키가 없으면 해당 10점은 미평가하고 다른 자료는 조회합니다. Windows에서는 키를 사용자 계정으로 암호화 저장합니다. 채권·FRED/ICE 및 시장 원시 자료와 점수 이력은 세션 메모리에서만 사용합니다. 실제 계좌·자동매수기는 연결하지 않습니다.
+
+내 포트폴리오는 선택한 **목표 구성**의 1·5·20거래일 참여율과 SPY 대비 가격 수익률을 별도로 표시합니다. 실제 계좌 보유 현황·배당 포함 운용 수익률과 구분합니다. 기존 백테스트·연구·워크포워드·저장 데이터·수달 아이콘과 업데이트 방식은 유지합니다.
+
+출처: [Atlantis Data Solutions](https://atlantisdatasolutions.com/terms-of-service), [FRED/ICE BAMLH0A0HYM2](https://fred.stlouisfed.org/series/BAMLH0A0HYM2), [SEC EDGAR](https://www.sec.gov/edgar), [Yahoo Finance / yfinance](https://ranaroussi.github.io/yfinance/index.html), [Wikipedia 현재 S&P 500 명단](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)). 현재 게시 명단은 과거 공식 구성 이력과 다릅니다. Atlantis 무료 최근 범위 밖의 이력·누락 YTM은 추정하지 않습니다.
+
+This product uses the FRED® API but is not endorsed or certified by the Federal Reserve Bank of St. Louis.
+
+아래는 Windows 설치형의 **합성 자료를 사용한 기능 검증 화면**입니다. 표시 점수와 관측일은 실제 현재 시장 데이터가 아닙니다.
+
+![시장 회복 모니터링 · 합성 자료 검증 화면](docs/recovery-v0.7.0-windows-synthetic.png)
+
 
 ## v0.6.2 경량 성능 개선
 
