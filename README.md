@@ -20,6 +20,14 @@ Windows x64용입니다. 릴리스에는 설치 파일과 `GGJPortfolioLab-Setup
 
 과거 성과는 미래 수익을 보장하지 않습니다. **v0.8.0부터 실제 계좌 주문 기능이 있습니다. 즉시매수 실행 버튼은 추가 확인창 없이 주문을 요청합니다.**
 
+## v0.8.2 지수 비교 빈 화면 수정
+
+지수 비교 메뉴를 처음 열 때 제목만 표시되던 화면 배치 문제를 수정했습니다. 본문 영역이 1×1픽셀로 남던 문제이며, 성과 계산이나 주문 기능은 변경하지 않았습니다.
+
+계좌·가격 자료가 없어도 **성과 차트 / 기간·비교 설정 / 과거 복원·자료 보완 / 25종목 순위**와 갱신 버튼·데이터 부족 안내가 표시됩니다. 기존 사용자는 **설정 → 업데이트 확인 → 업데이트 설치** 또는 [v0.8.2 설치 파일](https://github.com/audrlf56264832-collab/-ggj-portfolio-lab/releases/download/v0.8.2/GGJPortfolioLab-Setup.exe)을 이용하세요. 기존 데이터는 유지됩니다.
+
+Windows에 설치한 EXE에서 실제 메뉴 첫 진입을 검증하고 캡처를 확인했습니다: [빈 자료 차트](docs/index-v0.8.2-windows-empty.png) · [기간·벤치마크 설정](docs/index-v0.8.2-windows-empty-settings.png) · [과거 복원·CSV](docs/index-v0.8.2-windows-empty-restoration.png) · [25종목 순위](docs/index-v0.8.2-windows-empty-ranking.png) · [합성 자료 차트](docs/index-v0.8.2-windows-synthetic.png). 마지막 차트는 배포 검증용 합성 자료이며 실제 계좌 성과가 아닙니다. 사용자 PC의 실제 계좌 인증·주문은 개발 검증에 사용하지 않았습니다.
+
 ## v0.8.1 기존 GGJ 25 Index 성과 분석 복원
 
 **지수 비교** 메뉴에 기존 AutoBuy 1.2의 실제 성과 분석을 복원했습니다. 전체 UI를 바꾸지 않고 성과 차트·기간/비교 설정·과거 복원/자료 보완·25종목 순위 탭으로 제공합니다.
